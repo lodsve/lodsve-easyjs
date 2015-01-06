@@ -1,0 +1,138 @@
+.blog-cmts{
+	margin-top: 20px;
+	border-top: 1px solid #CCCCCC;
+    padding-left: 15px;
+}
+
+.blog-cmts textarea {
+    width: 430px;
+    height: 100px;
+    overflow: auto;
+    border-color: #7C7C7C #CCCCCC #DDDDDD;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 12px;
+}
+
+.act{
+	margin-right: 212px;
+	margin-top: 5px;
+    float: right;
+}
+
+.act input{
+	border-color: #DDDDDD #264F6E #264F6E #DDDDDD;
+	border-width: 1px;
+	border-style: solid;
+	background: none repeat scroll 0 0 #2782D6;
+	color: #FFFFFF;
+	line-height: 17px;
+	height: 21px;
+	letter-spacing: 1px;
+	padding: 1px 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.f_text{
+	width: 400px;
+	border-color: #7C7C7C #CCCCCC #DDDDDD;
+	border-width: 1px;
+	border-style: solid;
+	height: 25px;
+	font-size: 12px;
+}
+
+.blog-li{
+	background-color: rgb(255, 255, 255);
+	opacity: 1;
+    list-style: none outside none;
+    overflow: hidden;
+    left: 10px;
+    width: 80%;
+    /*margin-left: 15px;*/
+}
+
+.post:after, .post .info:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.post {
+    min-height: 60px;
+    overflow: hidden;
+    padding-left: 60px;
+    position: relative;
+}
+
+.post .image {
+    left: 0;
+    position: absolute;
+    top: 0;
+    margin-top: 0px;
+}
+
+.post .image img{
+	width: 48px;
+	height: 48px;
+}
+
+.post .info {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #2782D6;
+    color: #666666;
+    line-height: 180%;
+    padding: 0 5px 0 8px;
+    text-align: right;
+}
+
+.post .info .author{
+	float: left;
+    margin-right: 0.5em;
+    color: #666666;
+    line-height: 180%;
+    text-align: right;
+}
+
+.post .info .time{
+	color: #999999;
+	float: left;
+    margin-right: 0.5em;
+    line-height: 180%;
+    text-align: right;
+}
+
+.post .content {
+    padding: 5px 5px 5px 8px;
+    border-width: 0px;
+}
+
+.extBtn a {
+    float: left;
+    line-height: 18px;
+    margin-right: 7px;
+    position: relative;
+    color: #A8A8A8;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Tahoma;
+}
+
+.extBtn .emoticon i {
+    background-image: url("../../images/common/icenter.png");
+    background-position: -72px -110px;
+    cursor: pointer;
+    float: left;
+    height: 20px;
+    margin-right: 3px;
+    width: 20px;
+}
+
+.extBtn a.emoticon:hover i{
+	background-position: -133px -42px;
+}

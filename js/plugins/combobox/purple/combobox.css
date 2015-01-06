@@ -1,0 +1,200 @@
+/* 文本框、下来框、日期框、调整器都使用到这个 */
+.l-text {
+    position: relative;
+	border:1px solid #bbb;
+    border-color:#778899 #AABBCC #AABBCC #8899AA;
+    height: 20px;
+    line-height: 20px;
+    width: 250px;
+    background: white;
+}
+
+/* 表单文本框 input:text */
+.l-text-field {
+	float:left;
+    border: 0 !important;
+    margin: 0;
+    outline: none;
+    padding:2px 0px 0px 0px !important;
+	/*height:16px !important;*/
+	_margin-top:2px;
+	background:none;
+	width:100%;
+}
+
+/* 表单文本框 内容为空时 */
+.l-text-field-null {
+    color: #C1C1C1;
+}
+
+/* 下拉框/日期/调整器 右侧那个可点击的区域 分别是普通、经过、按住状态 */
+.l-trigger, .l-trigger-hover, .l-trigger-pressed{
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+	border:1px solid red;
+	float:right;
+	margin-right:1px;
+	margin-top:1px;
+	position: relative;
+}
+
+.l-trigger {
+    border: 1px solid #AECAF0;
+    background: #DBEBFF url('../../green/images/controls/bg-trigger.gif') repeat-x left;
+}
+
+.l-trigger-hover {
+    border: 1px solid #EABE4E;
+    background: #fedc75 url('../../green/images/controls/bg-trigger-over.gif') repeat-x left;
+}
+
+.l-trigger-pressed {
+    border: 1px solid #EABE4E;
+    background: #fedc75 url('../../green/images/controls/bg-trigger-pressed.gif') repeat-x left;
+
+}
+
+/* 下拉框/日期 右侧那个可点击的区域里面的图标 */
+.l-trigger-icon {
+    width: 100%;
+    height: 100%;
+    background: url('../../green/images/icon/icon-down.gif') no-repeat 50% 50%;
+}
+
+/* 日期 右侧那个可点击的区域里面的图标 */
+.l-trigger-date-icon {
+    width: 100%;
+    height: 100%;
+    background: url('../../../../skins/icons/icon_calendar.png') no-repeat 50% 50%;
+}
+
+/* -------------
+* 下拉框 *
+* ------------- */
+.l-box-select-grid {
+    border-bottom: 1px solid #A3C0E8;
+    border-right: 1px solid #A3C0E8;
+}
+
+.l-box-select-grid thead td, .l-box-select-grid tr.l-table-headerow td {
+    background: #DBEBFF url('../../green/images/controls/bg-panel-title.gif') repeat-x left;
+}
+
+.l-box-select-grid td {
+    padding: 0;
+    margin: 0;
+    height: 22px;
+    line-height: 22px;
+    border-left: 1px solid #A3C0E8;
+    border-top: 1px solid #A3C0E8;
+}
+
+.l-box-select {
+    display: none;
+    position: absolute;
+    padding: 0px;
+    border: 1px solid #AECAF0;
+    background: white;
+    width: 130px;
+    height: 120px;
+    margin-top: 1px;
+    z-index: 103;
+    font-size: 12px;
+    line-height: 18px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.l-box-select-inner {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+    color: #333;
+}
+
+.l-box-select-inner .l-box-select-table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.l-box-select .l-table-nocheckbox td:hover, .l-box-select .l-table-nocheckbox td.l-over {
+    background-color: #FFE7A2;
+    cursor: pointer;
+}
+
+.l-box-select .l-table-nocheckbox td.l-selected {
+    background-color: #FFBD69;
+}
+
+.l-box-select .l-box-select-table td {
+    padding: 2px;
+    text-align: left;
+}
+
+/* 下拉框 右下角调整大小图标 */
+.l-btn-nw-drop {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 8px;
+    height: 8px;
+    background: url('../../green/images/icon/icon-drop.gif') no-repeat 50% 50%;
+}
+
+/* 站点切换 */
+#top_sites .l-text-combobox{width:140px;background:url(../../green/images/common/header_select_left.gif) no-repeat left;padding-left:3px; white-space:nowrap; height:21px;}
+#top_sites .l-text{border:0px;}
+#top_sites  .dis_inline .l-input-margin{ margin-right:0 !important}
+#top_sites .l-text-combobox input{border:0 !important; height:21px; width:120px !important;background:transparent;cursor:default;color:#000; text-indent:3px; font-weight:bold; line-height:21px;} 
+#top_sites .l-text-combobox .l-trigger{border:0px !important;background:url(../../green/images/common/header_select_right.gif) no-repeat left; height:19px; width:16px; float:right}
+#top_sites .l-text-combobox .l-trigger-hover, .l-trigger-pressed{border:0px !important;background:url(../../green/images/common/header_select_right_over.gif) no-repeat left; height:19px; width:16px;	float:right;}
+#top_sites .l-trigger, .l-trigger-hover, .l-trigger-pressed{right:0px !important;float:right !important}
+#top_sites .l-text-combobox .l-trigger-icon{ background:none}
+
+#top_sites .l-box-select{border:1px solid #efd75c;margin-top: 20px; background:#fdf3bf;line-height:22px; width:120px !important;padding:3px; margin-left:0px; color:#000; left:10px;}
+#top_sites .l-box-select table td{ height:22px;line-height:22px; border-bottom:1px #f9e994 solid;border-top:1px #fff7cb solid}
+#top_sites .l-box-select .l-table-nocheckbox td.l-selected {
+	background:url(../../green/images/common/icon_selected.gif) no-repeat right;
+	
+}
+#top_sites .l-box-select .l-table-nocheckbox td:hover, .l-box-select .l-table-nocheckbox td.l-over {
+    background-color: #fcec98;
+    cursor: pointer;
+}
+
+.l-box-select .l-table-nocheckbox td.l-selected {
+    background-color: #FFBD69;
+}
+
+.l-text-clear{
+cursor: pointer;
+/*width: 40px;*/
+height: 16px;
+overflow: hidden;
+border: 1px solid #AECAF0;
+background: #DBEBFF url('../../green/images/controls/bg-trigger.gif') repeat-x left;
+float:right;
+margin-top:1px;
+margin-right:1px;
+z-index: 0;
+position: relative;
+}
+
+.l-text-clear a{ display:block;height:16px; color:#33528c; line-height:16px; text-indent:2px;}
+
+.l-clear-over{
+    border: 1px solid #EABE4E;
+    background: #fedc75 url('../../green/images/controls/bg-trigger-over.gif') repeat-x left;}
+	
+.l-input-margin{ margin-right:80px !important}
+.l-input-margin input{ width:100% !important}
+.l-text-combobox{}
+
+.l-hidden{
+    display: none !important;
+}

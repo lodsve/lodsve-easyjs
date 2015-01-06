@@ -1,0 +1,183 @@
+/*容器*/
+.l-button {
+    margin: 5px 0 5px 8px;
+    min-height: 30px;
+    display: block;
+    overflow: hidden;
+}
+
+.l-button-item {
+    float: left;
+    margin: 2px 3px 2px 0px;
+}
+
+/*按钮*/
+.l-panel-btn {
+    height: 28px;
+    overflow: hidden;
+    line-height: 25px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+/*按钮左侧*/
+.l-panel-btn-l {
+    height: 28px;
+    float: left;
+    background: #E0EDFF url(../../aqua/images/panel/panel-btn-l3.gif) no-repeat left;
+    padding: 0px 6px 0 6px;
+}
+
+/*按钮右侧*/
+.l-panel-btn-r {
+    float: left;
+    width: 3px;
+    height: 28px;
+    background: #E0EDFF url(../../aqua/images/panel/panel-btn-r.gif) no-repeat;
+}
+
+/*************************************鼠标悬浮样式*************************************/
+.l-panel-btn-over .l-panel-btn-l {
+    background: #E0EDFF url(../../aqua/images/panel/panel-btn-l3-over.gif) repeat-x !important;
+}
+
+.l-panel-btn-over .l-panel-btn-r {
+    background: #E0EDFF url(../../aqua/images/panel/panel-btn-r-over.gif) repeat-x !important;
+}
+
+.l-panel-btn-over .l-panel-btn-l, .l-panel-btn-over .l-panel-btn-r, .l-panel-btn-selected .l-panel-btn-l,
+.l-panel-btn-selected .l-panel-btn-r{
+    display: block;
+}
+/*************************************鼠标悬浮样式*************************************/
+
+/*************************************以下是禁用时的样式*************************************/
+.l-panel-btn-disable{
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    cursor: default;
+}
+/*************************************以上是禁用时的样式*************************************/
+
+/*分割线*/
+.l-button-split {
+    background: #E0EDFF url(../../aqua/images/panel/panel-btn-split.gif) bottom;
+    height: 28px;
+    width: 4px;
+    float: left;
+    margin: 0 5px 0 5px;
+}
+
+/*箭头*/
+.l-panel-btn-arrow {
+    background: #FFFFFF url(../../../../skins/default/images/arrow.png) no-repeat 0px 0px;
+    width: 9px;
+    height: 28px;
+    float: left;
+}
+
+/*箭头(鼠标悬浮)*/
+.l-panel-btn-over .l-panel-btn-arrow {
+    background-position: 0px -28px;
+}
+
+/*图标*/
+.l-button-item .l-icon {
+    width: 16px;
+    height: 28px;
+    line-height: 25px;
+    vertical-align: middle;
+    margin-top: 4px;
+    margin-right: 2px;
+}
+
+/*************************************以下是所有图标样式*************************************/
+/*菜单按钮icon*/
+.l-panel-btn-l .l-icon {float: left}
+/*增加*/
+.l-icon-add {background: url(../../../../skins/icons/btn_add.png) no-repeat;}
+/*删除*/
+.l-icon-delete { background: url(../../../../skins/icons/btn_del.png) no-repeat;}
+/*修改*/
+.l-icon-edit {background: url(../../../../skins/icons/btn_edit.png) no-repeat;}
+/*保存*/
+.l-icon-save {background: url(../../../../skins/icons/btn_save.png) no-repeat;}
+/*返回*/
+.l-icon-back {background: url(../../../../skins/icons/btn_back.png) no-repeat;}
+/*查看*/
+.l-icon-view {background: url(../../../../skins/icons/btn_view.png) no-repeat;}
+/*移动*/
+.l-icon-move {background: url(../../../../skins/icons/btn_move.png) no-repeat;}
+/*导出*/
+.l-icon-export {background: url(../../../../skins/icons/btn_export.png) no-repeat;}
+/*导入*/
+.l-icon-import {background: url(../../../../skins/icons/btn_import.png) no-repeat;}
+/*TODO关闭*/
+.l-icon-close { background: url(../../../../skins/icons/btn_del.png) no-repeat;}
+/*刷新*/
+.l-icon-refresh {background: url(../../../../skins/icons/btn_refresh.png) no-repeat;}
+/*复制*/
+.l-icon-copy {background: url(../../../../skins/icons/btn_copytxt.png) no-repeat;}
+/*粘贴*/
+.l-icon-paste {background: url(../../../../skins/icons/btn_paste.png) no-repeat;}
+/*剪切*/
+.l-icon-cut {background: url(../../../../skins/icons/btn_cut.png) no-repeat;}
+/*预览*/
+.l-icon-preview {background: url(../../../../skins/icons/btn_preview.png) no-repeat;}
+/*启用*/
+.l-icon-using {background: url(../../../../skins/icons/btn_using.png) no-repeat;}
+/*设置*/
+.l-icon-setting {background: url(../../../../skins/icons/btn_setting.png) no-repeat;}
+/*重置*/
+.l-icon-reset {background: url(../../../../skins/icons/btn_reset_psd.png) no-repeat;}
+/*上传*/
+.l-icon-upload {background: url(../../../../skins/icons/btn_upload.png) no-repeat;}
+/*下载*/
+.l-icon-download {background: url(../../../../skins/icons/btn_download.png) no-repeat;}
+/*用户*/
+.l-icon-user {background: url(../../../../skins/icons/btn_adduser.png) no-repeat;}
+/*排序*/
+.l-icon-sort {background: url(../../../../skins/icons/btn_sorttxt.png) no-repeat;}
+/*置顶*/
+.l-icon-top {background: url(../../../../skins/icons/btn_stickie_select.png) no-repeat;}
+/*取消置顶*/
+.l-icon-untop {background: url(../../../../skins/icons/btn_stickie.png) no-repeat;}
+/*回收*/
+.l-icon-trash {background: url(../../../../skins/icons/btn_trash.png) no-repeat;}
+/*收藏*/
+.l-icon-collect {background: url(../../../../skins/icons/btn_commend.png) no-repeat;}
+/*赞*/
+.l-icon-praise {background: url(../../../../skins/icons/btn_commend2.png) no-repeat;}
+/*发布*/
+.l-icon-publish {background: url(../../../../skins/icons/btn_publish.png) no-repeat;}
+/*取消发布*/
+.l-icon-unpublish {background: url(../../../../skins/icons/btn_publish_cancel.png) no-repeat;}
+/*历史*/
+.l-icon-history {background: url(../../../../skins/icons/btn_history.png) no-repeat;}
+/*审核*/
+.l-icon-verify {background: url(../../../../skins/icons/btn_verify.png) no-repeat;}
+/*待审核*/
+.l-icon-todo {background: url(../../../../skins/icons/btn_zy_todo.png) no-repeat;}
+/*重命名*/
+.l-icon-rename {background: url(../../../../skins/icons/rename.png) no-repeat;}
+/*撤销*/
+.l-icon-recove {background: url(../../../../skins/icons/btn_cover.gif) no-repeat;}
+/*计划*/
+.l-icon-plan {background: url(../../../../skins/icons/btn_plan.gif) no-repeat;}
+/*开始运行*/
+.l-icon-run {background: url(../../../../skins/icons/btn_play.png) no-repeat;}
+/*暂停*/
+.l-icon-pause {background: url(../../../../skins/icons/btn_pause.png) no-repeat;}
+/*停止*/
+.l-icon-stop {background: url(../../../../skins/icons/btn_stop.png) no-repeat;}
+/*复制站点*/
+/*.l-icon-copy_site {background: url(../../../../skins/icons/btn_copy_site.png) no-repeat;}*/
+/*使用模板*/
+/*.l-icon-use_template {background: url(../../../../skins/icons/btn_use_template.png) no-repeat;}*/
+/*************************************以上是所有图标样式*************************************/

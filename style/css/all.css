@@ -1,0 +1,14 @@
+/**
+ * 所有的样式.
+ *
+ * @author sunhao(sunhao.java@gmail.com)
+ * @version V1.0
+ * @createTime 13-9-4 下午7:54
+ */
+
+/*初始化*/
+@import url("reset.css");
+/*按钮*/
+@import url("button.css");
+/*链接*/
+@import url("link.css");

@@ -1,0 +1,115 @@
+.post-attachment-file {
+    border-bottom: 1px solid #CCCCCC;
+    padding: 5px 0;
+    position: relative;
+}
+
+.post-attachment-file .file-name {
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+.post-attachment-file span.delete {
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+
+.post-attachment-file span.delete a {
+    background: url("../../images/swfupload/delete.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 14px;
+    margin-top: 8px;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+    width: 13px;
+    vertical-align: middle !important;
+}
+
+.post-attachment-file span.delete a:hover {
+    background-position: 0 -14px;
+    vertical-align: middle !important;
+}
+
+.post-attachment-file .file-name a:link, .post-attachment-file .file-name a:visited {
+    color: #0066CC;
+    text-decoration: none;
+}
+
+.post-attachment-file .file-name a {
+    outline: medium none;
+}
+
+.post-attachment-file img {
+    vertical-align: middle !important;
+}
+
+.btn-input1{
+    background: none repeat scroll 0 0 #2782D6;
+    border-color: #DDDDDD #264F6E #264F6E #DDDDDD;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 21px;
+    letter-spacing: 1px;
+    line-height: 17px;
+    padding: 1px 10px;
+    text-align: center;
+}
+
+.btn-input {
+	background: url('../../images/swfupload/btn-bg.png');
+	border: 1px solid #8B8B8B;
+	color: #535353;
+    display: inline-block;
+    height: 23px;
+    line-height: 21px;
+    font-weight: bold;
+    padding-left: 16px;
+    cursor: pointer;
+}
+
+.btn-hover {
+	border-color: #333333;
+}
+
+.plus-icon {
+	position: absolute;
+	margin-top: 6px; 
+	margin-left: 5px;
+}
+
+.attachment{
+    margin-top: 13px;
+    padding-top: 5px;
+    border-top: 1px solid #DDDDDD;
+}
+
+.post-attachments-div {
+    margin: 10px 5px 5px 10px;
+    width: auto;
+    border: 1px dashed #D0CFCF;
+    padding: 0.5em;
+    font-family: arial,'宋体',sans-serif;
+    font-size: 12px;
+}
+
+.post-attachments-title{
+    font-weight: bold;
+}
+
+.post-attachments-files img{
+    vertical-align: middle !important;
+    margin-right: 10px;
+}
+
+.post-attachments-files p {
+    padding: 0px;
+    margin: 5px 0px 0px 0px;
+}
+
+.post-attachments-files .post-attachment-file .download_count{
+    margin-left: 10px;
+}

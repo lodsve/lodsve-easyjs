@@ -1,0 +1,80 @@
+/* Resizable */
+.l-resizable {
+    display: none;
+    overflow: hidden;
+    border-style: dashed;
+    border-width: 1px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    background: #f2f1f1;
+}
+
+.l-resizable-h-l {
+    cursor: nw-resize;
+    top: 0;
+    left: 0;
+    z-index: 103;
+}
+
+.l-resizable-h-r {
+    cursor: ne-resize;
+    top: 0;
+    right: 0;
+    z-index: 103;
+}
+
+.l-resizable-h-c {
+    width: 100%;
+    cursor: n-resize;
+    top: 0;
+    left: 0;
+    z-index: 102;
+}
+
+.l-resizable-c-l {
+    cursor: w-resize;
+    top: 0;
+    left: 0;
+    z-index: 102;
+}
+
+.l-resizable-c-r {
+    cursor: e-resize;
+    top: 0;
+    right: 0;
+    z-index: 102;
+}
+
+.l-resizable-f-l {
+    cursor: sw-resize;
+    bottom: 0;
+    left: 0;
+    z-index: 103;
+}
+
+.l-resizable-f-r {
+    cursor: se-resize;
+    bottom: 0;
+    right: 0;
+    z-index: 103;
+}
+
+.l-resizable-f-c {
+    width: 100%;
+    cursor: s-resize;
+    bottom: 0;
+    left: 0;
+    z-index: 102;
+}
+
+.l-resizable-h-l, .l-resizable-h-r, .l-resizable-h-c, .l-resizable-c-l, .l-resizable-c-r, .l-resizable-f-l, .l-resizable-f-r, .l-resizable-f-c {
+    display: block;
+    overflow: hidden;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+}

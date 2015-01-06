@@ -1,0 +1,154 @@
+﻿
+/* --------------
+   *   form  *
+* ------------ */
+
+/*
+IE8 fieldset和legend的有关于padding的hack
+ */
+fieldset { padding:0 1.4em 1.4em 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+legend   { font-weight: bold; font-size:1.2em; margin-top:-0.2em; margin-bottom:1em; }
+
+fieldset, #IE8#HACK { padding-top:1.4em; }
+legend, #IE8#HACK { margin-top:0; margin-bottom:0; }
+
+/*
+ 属性选择定义，text，title可以被用来定义
+ */
+input[type=text], input[type=password], input[type=url], input[type=email],
+input.text, input.title,
+textarea {
+  border:1px solid #bbb;
+  color:#003399;
+  padding:5px 1px 2px 2px;
+  *padding:4px 1px 2px 2px;
+  border-radius:1px;
+  border-color:#778899 #AABBCC #AABBCC #8899AA;
+  background:#fff url(../images/input_bg.gif) repeat-x top;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=url]:focus, input[type=email]:focus,
+input.text:focus, input.title:focus,
+textarea:focus, input:focus {
+  border-color:#ff8800;
+}
+select { background:#fff url(../images/input_bg.gif) repeat-x top; border:1px solid #778899;color:#003399;padding:4px 3px 1px 0px;}
+
+input{color:#003399;}
+
+input.text,
+input.title {  }
+input.title { font-size: 12px;}
+textarea    {  }
+
+.input_rule{background:url(../../default/images/rule.gif) left bottom no-repeat !important;}
+/*
+  This is to be used on forms where a variety of elements are
+  placed side-by-side. Use the p tag to denote a line.
+ */
+form.inline { line-height:3; }
+form.inline p { margin-bottom:0; }
+
+
+/* 成功, 信息, 提示 和错误/警告提示框 */
+.prompt{color:#666; margin-left:0px; background:#f4f1bc url(../images/prompt_bg.gif) repeat-x top;border:1px solid #e1be55;height:19px; line-height:19px; display: inline-block; padding:0 3px 0 3px; white-space:nowrap;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+
+.error,
+.alert,
+.notice,
+.success,
+.info { padding:5px; margin-bottom: 1em; border: 1px solid #ddd; }
+
+.error, .alert { background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
+.notice{ background: #fff6bf; color: #514721; border-color: #ffd324;}
+.notice h4{height:18px; font-size:12px;}
+.notice li{line-height:18px;}
+.success       { background: #e6efc2; color: #264409; border-color: #c6d880; }
+.info          { background: #d5edf8; color: #205791; border-color: #92cae4; }
+.error a, .alert a { color: #8a1f11; }
+.notice a          { color: #514721; }
+.success a         { color: #264409; }
+.info a            { color: #205791; }
+
+
+/* 表单样式  */
+.dialog_body{ margin:10px;background:#FFF}
+.dialog_body .dialog_table{ background:#FFF;border-collapse:collapse;border:1px solid #eee;color:#003399;}
+.dialog_body .dialog_table td{ line-height:22px; padding:2px 4px 2px 6px;height:22px; text-align:left;border-bottom:1px solid #eee;border-left:0px;border-right:0px;}
+.dialog_body .dialog_table .text{text-align:left; white-space:nowrap;color:#3A3A3A;font-size:13px;}
+
+.main_body{ margin:5px 10px 10px 10px;background:#FFF;}
+.main_body .main_table{background:#FFF;  border-collapse:collapse;border:1px solid #eee; color:#003399;}
+.main_body .main_table td{ line-height:24px; padding:2px 4px 2px 6px;height:24px; text-align:left; border-bottom:1px solid #eee;border-left:0px;border-right:0px;}
+.main_body .main_table .text{font-size:13px; color:#3a3a3a;}
+
+.main_body table .text{text-align:left; white-space:nowrap;color:#3A3A3A;}
+
+
+.main_body{ margin:5px 10px 10px 10px;background:#FFF;}
+.main_body .content_table{background:#edf0fd;border:1px solid #cad2fb; color:#003399;}
+.main_body .content_table td{ line-height:22px; padding:0px 0px 0px 0px;height:22px; text-align:left; border-bottom:1px solid #dee3fc;border-top:1px solid #f3f5fe;border-left:0px;border-right:0px;}
+.main_body .content_table .text{font-size:12px; color:#3a3a3a;}
+
+/* 图标列表样式  */
+.icon_list{}
+.icon_list a{border:1px solid #ccc;float:left;height:16px;width:16px;margin:5px; padding:11px;}
+.icon_list a:link{}
+.icon_list a:visited{border:1px solid #ccc;}
+.icon_list a:hover{border:1px solid #ff9900; background:#fccf76}
+.icon_list span{ display:block; font-size:13px; font-weight:normal; float:left;height:20px; line-height:20px; width:450px; padding-left:5px; font-weight:bold; color:#555}
+.icon_list a.selected{border:2px solid #ff9900;background:url(../../icons/ico_selected_small.gif) bottom right no-repeat;padding:10px;}
+
+
+/* 进度条样式  */
+.progressbar{width:250px;height:14px;border:1px solid #c4c3c3; line-height:14px; background:url(../images/progressbar_grey.gif)}
+.progressbar .used{ position:relative; top:-1px; left:-1px;background:url(../images/progressbar_green.gif) repeat-x; height:14px; display:block; line-height:14px; text-align:right; color:#000000; border:1px solid #51a826; padding-right:3px; font-family:Arial; font-size:11px; font-weight:bold; z-index:900}
+.progressbar .alloted{ position:relative; top:-1px; left:-1px;background:url(../images/progressbar_yellow.gif) repeat-x; height:14px; display:block; line-height:14px; text-align:right; color:#000000; border:1px solid #dac529; padding-right:3px; font-family:Arial; font-size:11px; font-weight:bold; z-index:900}
+.progressbar_text{color:#1c6a01;font-family:Arial; height:14px; line-height:14px;}
+
+.lmgl_div li{ float:left;margin-right:25px;}
+.lmgl_div li span{display:block; height:50px;float:left; text-align:center;vertical-align:middle}
+.lmgl_div li span input[type=radio]{ margin-top:20px;}
+
+.lmgl_kuang{display:block;padding:3px;border:1px solid #eee; background:#f5f5f5}
+.lmgl_kuang span{ display:block}
+
+
+
+
+/* 工具栏分割线和其他一些按钮  */
+.toolbar_split{ background: url(../images/panel-btn-split.gif) no-repeat left;float:left;margin:8px 0 0 5px;padding-left:12px; width:64px;}
+.toolbar_split .show_detail,.show_list{ float:right; display:block; width:64px; height:22px;}
+.toolbar_split .show_detail{background: url(../images/switch_list.gif) no-repeat;}
+.toolbar_split .show_list{background: url(../images/switch_detail.gif) no-repeat;}
+
+/* 分页样式  */
+div.page_blue {
+	padding-right: 3px; padding-left: 3px; font-size: 0.85em; padding-bottom: 3px; margin: 3px; padding-top: 3px; font-family: tahoma,helvetica,sans-serif; text-align: center
+}
+div.page_blue a {
+	border-right: #ccdbe4 1px solid; padding-right: 8px; background-position: 50% bottom; border-top: #ccdbe4 1px solid; padding-left: 8px; padding-bottom: 2px; border-left: #ccdbe4 1px solid; color: #0061de; margin-right: 3px; padding-top: 2px; border-bottom: #ccdbe4 1px solid; text-decoration: none
+}
+div.page_blue a:hover {
+	border-right: #2b55af 1px solid; border-top: #2b55af 1px solid; background-image: none; border-left: #2b55af 1px solid; color: #fff; border-bottom: #2b55af 1px solid; background-color: #3666d4
+}
+div.page_blue a:active {
+	border-right: #2b55af 1px solid; border-top: #2b55af 1px solid; background-image: none; border-left: #2b55af 1px solid; color: #fff; border-bottom: #2b55af 1px solid; background-color: #3666d4
+}
+div.page_blue span.current {
+	padding-right: 6px; padding-left: 6px; font-weight: bold; padding-bottom: 2px; color: #000; margin-right: 3px; padding-top: 2px
+}
+div.page_blue span.disabled {
+	display: none
+}
+div.page_blue a.next {
+	border-right: #ccdbe4 2px solid; border-top: #ccdbe4 2px solid; margin: 0px 0px 0px 10px; border-left: #ccdbe4 2px solid; border-bottom: #ccdbe4 2px solid
+}
+div.page_blue a.next:hover {
+	border-right: #2b55af 2px solid; border-top: #2b55af 2px solid; border-left: #2b55af 2px solid; border-bottom: #2b55af 2px solid
+}
+div.page_blue a.prev {
+	border-right: #ccdbe4 2px solid; border-top: #ccdbe4 2px solid; margin: 0px 10px 0px 0px; border-left: #ccdbe4 2px solid; border-bottom: #ccdbe4 2px solid
+}
+div.page_blue a.prev:hover {
+	border-right: #2b55af 2px solid; border-top: #2b55af 2px solid; border-left: #2b55af 2px solid; border-bottom: #2b55af 2px solid
+}

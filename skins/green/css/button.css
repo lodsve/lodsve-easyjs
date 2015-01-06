@@ -1,0 +1,47 @@
+﻿
+/* --------------
+   *   按钮图标展示  *
+* ------------ */
+.toolbar span{float:left;margin:6px 2px 6px 2px;}
+.toolbar_btn{width:auto;}
+.toolbar_btn a{float:left;background:url(../images/toolbar_btn_left.gif) no-repeat left;height:27px;line-height:27px; padding:0 10px 0 10px; white-space:nowrap; letter-spacing:1px; color:#000;}
+.toolbar_btn a img{ margin-right:3px; vertical-align:middle; line-height:16px;}
+.toolbar_btn b{float:left;background:url(../images/toolbar_btn_right.gif) no-repeat right center; font-weight:normal;cursor:pointer;height:27px; width:4px;}
+
+.small_button{background:#fff url(../images/small_button_bg.gif) repeat-x bottom; border:1px solid #bebebe; height:18px; color:#333; padding:2px; margin-left:3px;}
+
+
+/*新增，添加*/
+.ecms_add_button{ }
+/*删除*/
+.ecms_del_button{}
+/*编辑，修改*/
+.ecms_modify_button{}
+/*查询*/
+.ecms_query_button{}
+/*保存*/
+.ecms_save_button{}
+/*查看*/
+.ecms_view_button{}
+/*移动*/
+.ecms_move_button{}
+/*复制*/
+.ecms_copy_button{}
+/*清空，重置*/
+.ecms_reset_button{}
+/*导出*/
+.ecms_export_button{}
+/*导入*/
+.ecms_import_button{}
+/*排序*/
+.ecms_sort_button{}
+/*预览*/
+.ecms_preview_button{}
+/*发布*/
+.ecms_publish_button{}
+/*上传*/
+.ecms_upload_button{}
+/*下载*/
+.ecms_download_button{}
+/*重命名*/
+.ecms_rename_button{}

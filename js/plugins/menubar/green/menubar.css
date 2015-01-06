@@ -1,0 +1,129 @@
+
+/* --------------
+   *   menu  *
+* ------------ */
+
+.l-menu { border:1px solid #979797; background:#F5F5F5;position:absolute; overflow:hidden; padding-bottom:2px; z-index:1001}
+.l-menu-shadow{
+    z-index:1000;
+	FILTER: progid:DXImageTransform.Microsoft.Blur(pixelRadius=2,MakeShadow=false,ShadowOpacity=0.2);
+	BACKGROUND: #ddd;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+.l-menu-inner{ position:relative;width:100%;z-index:103;}
+.l-menu-over{position:absolute;top:-24px;left:2px; z-index:102; height:22px; overflow:hidden;background:url('../../green/images/menu/menu-item-over-m.gif') repeat-x;width:97%;}
+.l-menu-yline { background:url('../../green/images/menu/menu-line-y.gif') repeat-y; width:2px; height:2000px; position:absolute; left:28px; top:1px; z-index:101;}
+.l-menu-over-l{background:url('../../green/images/menu/menu-item-over-l.gif') no-repeat; width:28px; height:22px; position:absolute;top:0; left:0;}
+.l-menu-over-r{background:url('../../green/images/menu/menu-item-over-r.gif') no-repeat; width:3px;height:22px; position:absolute;top:0; right:0;}
+.l-menu-item { position:relative; height:23px; line-height:23px; width:100%;  cursor:pointer;}
+.l-menu-item-line{background:url('../../green/images/menu/menu-line-x.gif') repeat-x; height:2px; width:100%; margin-top:1px; margin-bottom:1px; margin-left:30px; line-height:2px; overflow:hidden;}
+.l-menu-item-arrow{background:url('../../green/images/menu/menu-item-arrow.gif') no-repeat; position:absolute; top:8px; right:9px; width:4px; height:7px;}
+.l-menu-item-text{color:#000000;left: 33px;position: absolute;top: 0;}
+.l-menu-item-icon{ left: 3px;top: 0;position: absolute; width:25px; height:22px; overflow:hidden;}
+.l-menu-item-disable{ cursor:default;}
+.l-menu-item-disable .l-menu-item-text{ color:#A1A1A1;}
+.l-menubar {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("../../green/images/panel/panel-menu.jpg") repeat-x scroll 0 0 transparent;
+    border-color: #EFF7F7 #ADBED6 #ADBED6;
+    border-right: 1px solid #ADBED6;
+    border-style: solid;
+    border-width: 1px;
+    height: 24px;
+}
+.l-toolbar {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("../../green/images/panel/panel-toolbar.jpg") repeat-x scroll 0 0 #CEDFEF;
+    border-color: #EFF7F7 #9CBAE7 #9CBAE7;
+    border-right: 1px solid #9CBAE7;
+    border-style: solid;
+    border-width: 1px;
+    height: 23px;
+}
+.l-menubar-item {
+    float: left;
+    margin-left: 6px;
+}
+.l-panel
+{
+    border:1px solid #84A0C4;
+    position:relative;
+}
+.l-panel table{ width:auto;}
+.l-panel table,.l-panel td{ margin:0; padding:0;}
+.l-panel-btn
+{
+    display:block;
+     height:22px; overflow:hidden; line-height:22px; position:relative;
+     padding-left:15px; padding-right:15px; cursor:pointer;
+
+     text-align:center;color: #2C4D79;  text-decoration:none; cursor:pointer;
+}
+.l-panel-btn .l-panel-btn-l,.l-panel-btn .l-panel-btn-r{ display:none;}
+.l-panel-btn-over,.l-panel-btn-selected{background: #E0EDFF url(../../green/images/panel/panel-btn.gif) repeat-x;}
+.l-panel-btn-over .l-panel-btn-l,.l-panel-btn-over .l-panel-btn-r,.l-panel-btn-selected .l-panel-btn-l,.l-panel-btn-selected .l-panel-btn-r{ display:block; }
+.l-panel-btn-l
+{
+    position:absolute; width:3px; left:0px; top:0px;height:22px;
+    background: #E0EDFF url(../../green/images/panel/panel-btn-l.gif) no-repeat;
+}
+.l-panel-btn-r
+{position:absolute; width:3px; right:0px; top:0px;height:22px;
+    background: #E0EDFF url(../../green/images/panel/panel-btn-r.gif) no-repeat;
+}
+.l-panel-header{
+color: #15428B;
+font-weight: bold;
+font-size: 11px;
+ height:24px;
+border-bottom:1px solid #99BBE8;
+background: url('../../green/images/panel/header-bg.gif') repeat-x left -1px;
+}
+.l-panel-header-text{ line-height:22px;padding-left:10px;}
+.l-panel-body
+{
+  position:relative; overflow:hidden; width:100%;
+}
+.l-panel-body .l-grid
+{
+}
+.l-menubar
+{
+    background: url('../../green/images/panel/panel-menu.jpg') repeat-x; height:24px; border:1px solid #ADBED6;
+
+}
+.l-menubar-item
+{
+    float:left; margin-left:6px;
+}
+.l-menubar-item-down
+{
+    width:7px; height:4px; line-height:4px;
+    background:url('../../green/images/panel/panel-menu-item-down.gif') no-repeat center; position:absolute; right:4px; top:9px;
+}
+.l-menubar-item-over
+{
+}
+/*菜单按钮icon*/
+.l-icon-add{}/*增加*/
+.l-icon-delete{}/*删除*/
+.l-icon-update{}/*修改*/
+.l-icon-view{}/*查看*/
+.l-icon-export{}/*导出*/
+.l-icon-close{}/*关闭*/
+.l-icon-refresh{}/*刷新*/
+.l-icon-copy{}/*复制*/
+.l-icon-paste{}/*粘贴*/
+.l-icon-cut{}/*剪切*/

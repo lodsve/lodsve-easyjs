@@ -1,0 +1,112 @@
+﻿
+/* --------------
+   *   layout  *
+* ------------ */
+#container{width:100%}
+
+/*页面头部*/
+#header{position:relative;z-index:100;width:100%;height:80px; background:url(../images/header_bg_repeat.gif) repeat-x top;}
+#header .layout_1,.layout_2{width:100%;z-index:120;}
+#header .layout_1{height:50px;}
+#header .layout_2{height:30px;line-height:30px;top:50px;display:inline;}
+#header .bg{position:absolute;width:z-index:110;width:1018px;height:80px;background:url(../images/header_bg.gif) left top;}
+#header .logo{float:left;height:80px;width:316px;background:url(../images/header_logo.gif) no-repeat;margin-left:11px; display:inline;}
+#header .shop{float:right;height:50px;line-height:50px;}
+.shop div{float:left; display:inline}
+.shop .userinfo{color:#30434d;font-weight:bold;margin-right:10px;margin-top:8px;}
+.shop .shortcut{height:50px;line-height:50px;margin-right:10px;}
+.shop .weather{height:50px;width:73px;background:url(../images/header_weather.gif) no-repeat;margin-right:12px;}
+.shortcut a{float:left;height:23px;width:29px;text-decoration:none; margin-top:20px;outline:none}
+
+.shortcut .message:link{background:url(../images/header_shortcut_message.gif) no-repeat;}
+.shortcut .message:visited{background:url(../images/header_shortcut_message.gif) no-repeat;}
+.shortcut .message:hover{background:url(../images/header_shortcut_message_over.gif) no-repeat;}
+
+.shortcut .system:link{background:url(../images/header_shortcut_system.gif) no-repeat;}
+.shortcut .system:visited{background:url(../images/header_shortcut_system.gif) no-repeat;}
+.shortcut .system:hover{background:url(../images/header_shortcut_system_over.gif) no-repeat;}
+
+.shortcut .personal:link{background:url(../images/header_shortcut_personal.gif) no-repeat;}
+.shortcut .personal:visited{background:url(../images/header_shortcut_personal.gif) no-repeat;}
+.shortcut .personal:hover{background:url(../images/header_shortcut_personal_over.gif) no-repeat;}
+
+.shortcut .skin:link{background:url(../images/header_shortcut_skin.gif) no-repeat;}
+.shortcut .skin:visited{background:url(../images/header_shortcut_skin.gif) no-repeat;}
+.shortcut .skin:hover{background:url(../images/header_shortcut_skin_over.gif) no-repeat;}
+
+.shortcut .help:link{background:url(../images/header_shortcut_help.gif) no-repeat;}
+.shortcut .help:visited{background:url(../images/header_shortcut_help.gif) no-repeat;}
+.shortcut .help:hover{background:url(../images/header_shortcut_help_over.gif) no-repeat;}
+
+.shortcut .exit:link{background:url(../images/header_shortcut_exit.gif) no-repeat;}
+.shortcut .exit:visited{background:url(../images/header_shortcut_exit.gif) no-repeat;}
+.shortcut .exit:hover{background:url(../images/header_shortcut_exit_over.gif) no-repeat;}
+
+.layout_2 .arrow_up{display:block;height:21px;width:21px; margin-top:5px; outline:none}
+.layout_2 .arrow_up:link{background:url(../images/arrow_up.gif) no-repeat;}
+.layout_2 .arrow_up:visited{ background:url(../images/arrow_up.gif) no-repeat;}
+.layout_2 .arrow_up:hover{ background:url(../images/arrow_up_over.gif) no-repeat;}
+
+.layout_2  a{ float:left;height:21px;line-height:21px;}
+.layout_2 .select_l{width:91px;background:url(../images/header_select_left.gif) no-repeat;padding-left:3px;}
+.layout_2 .select_r{width:16px;outline:none}
+.layout_2 .select_r:link{background:url(../images/header_select_right.gif) no-repeat;}
+.layout_2 .select_r:visited{background:url(../images/header_select_right.gif) no-repeat;}
+.layout_2 .select_r:hover{background:url(../images/header_select_right_over.gif) no-repeat;}
+
+/*左侧菜单*/
+#sidebar{width:180px;background:url(../images/sidebar_bg.gif) repeat-y left; height:500px; float:left;}
+#sidebar .header{height:33px;line-height:33px;background:url(../images/sidebar_head_bg.gif) no-repeat;}
+#sidebar .header .arrow_left{ float:right;display:inline;height:21px;width:21px; margin:7px 8px 0px 0px; outline:none}
+#sidebar .header .arrow_left:link{background:url(../images/arrow_left.gif) no-repeat;}
+#sidebar .header .arrow_left:visited{ background:url(../images/arrow_left.gif) no-repeat;}
+#sidebar .header .arrow_left:hover{ background:url(../images/arrow_left_over.gif) no-repeat;}
+
+
+#sidebar .accordion_header_open a img{ padding-right:9px;vertical-align:middle;}
+#sidebar .accordion_header_close a img{ padding-right:9px;vertical-align:middle;}
+#sidebar .accordion_header_close span{ display: inline-block;}
+#sidebar .accordion_header_open span{ display: inline-block;}
+#sidebar .accordion_header_open a{ display:block;width:170px;height:27px;line-height:27px;text-decoration:none;color:#19232e; padding-left:10px; font-weight:bold; cursor:pointer}
+#sidebar .accordion_header_close a{ display:block;width:170px;height:27px;line-height:27px;text-decoration:none;color:#19232e; padding-left:10px;cursor:pointer}
+#sidebar .accordion_header_open a:link{background:url(../images/sidebar_accordion_header_open.gif) no-repeat left}
+#sidebar .accordion_header_open a:visited{background:url(../images/sidebar_accordion_header_open.gif) no-repeat left}
+#sidebar .accordion_header_open a:hover{background:url(../images/sidebar_accordion_header_open_over.gif) no-repeat left}
+#sidebar .accordion_header_close a:link{background:url(../images/sidebar_accordion_header_close.gif) no-repeat left}
+#sidebar .accordion_header_close a:visited{background:url(../images/sidebar_accordion_header_close.gif) no-repeat left}
+#sidebar .accordion_header_close a:hover{background:url(../images/sidebar_accordion_header_close_over.gif) no-repeat left}
+
+#sidebar .accordion_content li{height:26px;line-height:26px;}
+#sidebar .accordion_content li a{display:block;width:170px;height:26px;line-height:26px; background: #FFF url(../images/sidebar_accordion_content_bg.gif) no-repeat right; padding-left:10px; text-indent:25px; text-decoration:none;color:#4e6175}
+#sidebar .accordion_content li a:link{background: #FFF url(../images/sidebar_accordion_content_bg.gif) no-repeat right;}
+#sidebar .accordion_content li a:visited{background: #FFF url(../images/sidebar_accordion_content_bg.gif) no-repeat right;}
+#sidebar .accordion_content li a:hover{background: #FFF url(../images/sidebar_accordion_content_bg_over.gif) no-repeat right;}
+
+#sidebar .accordion_content .selected{background: #FFF url(../images/sidebar_accordion_content_bg_down.gif) no-repeat right !important;color:#FFF}
+
+#sidebar .accordion_footer{ background:#e3ebf0 url(../images/accordion_footer_bg.gif) repeat-x top;width:176px;height:100px;}
+
+
+/*多窗口样式*/
+#content .maintab{height:30px;background:url(../images/maintab_bg.gif) repeat-x bottom;}
+#content .maintab li{float:left;height:29px;line-height:29px;padding-right:1px; cursor:pointer;}
+.maintab .maintab_left a{vertical-align:middle;color:#000;height:29px;line-height:29px;display:inline-block;margin:0 3px 0 20px;}
+.maintab .maintab_left img{vertical-align:middle;margin:0 -15px 0 5px;display:inline-block;}
+.maintab .maintab_left{float:left;background:url(../images/maintab_left.gif) no-repeat left; vertical-align:middle;}
+.maintab .maintab_right{height:29px;float:left;width:24px;background:url(../images/maintab_right.gif) no-repeat right;}
+
+.maintab .selected .maintab_left a{color:#FFF !important;}
+.maintab .selected .maintab_left{float:left;background:url(../images/maintab_left_selected.gif) no-repeat left;vertical-align:middle;height:30px;}
+.maintab .selected .maintab_right{height:30px;float:left;width:24px;background:url(../images/maintab_right_selected.gif) no-repeat right;}
+
+
+
+
+
+
+/*#content{width:100%;height:500px;background:#6b91dd;float:left}*/
+
+
+
+/*#footer{height:28px;line-height:28px;background:url(../images/footer_bg.gif) repeat-x;}
+#footer .copyright{color:#87969f;text-align:center;}*/

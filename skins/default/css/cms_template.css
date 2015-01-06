@@ -1,0 +1,23 @@
+.cms_template_div_selected{border:1px  dotted #aaa; margin:-1px; position: relative; min-height: 28px !important;}
+.cms_template_toolbar{position:absolute; top:0; left:0}
+.cms_template_toolbar a{}
+.cms_template_toolbar a:link,a:visited{ padding:1px 6px;float:left; font-size:12px; display:block;border:1px solid #849bc2; height:20px;line-height:20px;margin:0px 0 3px 2px;
+white-space:nowrap; border-radius:2px; text-align:center; background:url(../images/template_btn_bg.gif) top repeat-x; cursor:pointer;
+box-shadow:0px 1px 1px #ddd;text-decoration: none; color:#000}
+
+.cms_template_toolbar a:hover{ background:url(../images/template_btn_bg_over.gif) top repeat-x;border:1px solid #f2c03a}
+.cms_template_toolbox{width:157px;position:absolute;top:20px;left:20px;}
+.cms_template_toolbox_head_bg{color:#fff;font-size:12px; height:28px; line-height:28px;text-indent:30px;background:url(../images/toolbox_head.png) top no-repeat;
+ font-family:"微软雅黑";font-size:14px; cursor: move}
+.cms_template_toolbox_main{background:#f1f1f1; width:157px;padding:0px 0 2px 0; border-radius:0px 0px 2px 2px;}
+.cms_template_toolbox_innner_bg{margin:0 0 0 2px;height:350px;width:151px;background:#f9f9f9 url(../images/toolbox_main_bg.gif) top repeat-x;
+border:1px solid #d6d6d6; border-radius:0px 0px 2px 2px;}
+.cms_template_toolbox_tabs{display: inline-block; list-style:none outside none; margin:5px 5px 0 5px; padding:0;border-bottom:1px solid #E9E9E9; width:143px;}
+.cms_template_toolbox_tabs li{list-style:none outside none;float:left;margin-right:5px;}
+.cms_template_toolbox_tabs li a{ display:block;font-size:12px; text-decoration:none;padding:3px 7px;border-left:1px solid #E9E9E9;border-right:1px solid #E9E9E9;border-top:1px solid #E9E9E9; color:#000; background:#F5F5F5}
+.cms_template_toolbox_tabs_01,.cms_template_toolbox_tabs_02{ height:310px; margin:8px;}
+.cms_template_toolbox_tabs .cms_template_toolbox_tabs_selected{ border-bottom:1px solid #fff !important;border-top:2px solid #FED944 !important;margin-bottom:-1px !important; background:#fff; font-weight:bold;}
+.cms_template_toolbox_tabs_01 a{ display:block;margin-bottom:10px; text-decoration:none; color:#000; cursor:move; padding:3px;}
+.cms_template_toolbox_tabs_01 a:hover{ background:#f1f1f1}
+.cms_template_toolbox_tabs_01 a img{ vertical-align:middle;border:0}
+.cms_template_toolbox_tabs_01 a b{ font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight: normal; margin-left:5px;}

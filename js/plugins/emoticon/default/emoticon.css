@@ -1,0 +1,184 @@
+.yui-overlay {
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    padding: 5px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #666666;
+    top: 0;
+    width: 240px;
+}
+
+.yui-overlay .hd, .yui-overlay .bd, .yui-overlay .ft {
+    visibility: inherit;
+}
+
+.yui-overlay .act {
+    margin-top: 12px;
+    text-align: right;
+    padding: 5px;
+}
+
+p {
+    line-height: 18px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 5;
+}
+
+.decor {
+    background: url("../../images/emoticon/pmsg_dialog.gif") no-repeat scroll 0 0 transparent;
+    bottom: -12px;
+    height: 12px;
+    left: 80%;
+    position: absolute;
+    width: 13px;
+}
+
+.decor1 {
+    background: url("../../images/emoticon/pmsg_dialog1.gif") no-repeat scroll 0 0 transparent;
+    height: 12px;
+    left: 80%;
+    position: absolute;
+    width: 13px;
+}
+
+/**===============================================================================================================================*/
+
+.qz_emotion_bd .qzfl_emotion_panel {
+	padding: 0 10px 2px;
+}
+
+.qzfl_emotion_page_1 {
+	background: url('../../images/emoticon/images/1.png') 0 0 no-repeat;
+}
+
+.qzfl_emotion_page_2 {
+	background: url('../../images/emoticon/images/2.png') 0 0 no-repeat;
+}
+
+.qzfl_emotion_page_3 {
+	background: url('../../images/emoticon/images/3.png') 0 0 no-repeat;
+}
+
+.qzfl_emotion_page_4 {
+	background: url('../../images/emoticon/images/4.png') 0 0 no-repeat;
+}
+
+.qzfl_emotion_page_5 {
+	background: url('../../images/emoticon/images/5.png') 0 0 no-repeat;
+}
+
+.qzfl_emotion_page_6 {
+	background: url('../../images/emoticon/images/6.png') 0 0 no-repeat;
+}
+
+ul.qzfl_emotion_default{
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.qzfl_emotion_default li {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+ul.qzfl_emotion_default .icon {
+	background-repeat: no-repeat;
+	height: 24px;
+	width: 24px;
+}
+
+.qzfl_emotion_default .icon {
+	background: none;
+}
+
+.qzfl_emotion_default a:link, .qzfl_emotion_default a:visited {
+	padding: 1px;
+	display: block;
+}
+
+.qzfl_emotion_default a:hover{
+	border: 1px solid #0066CC;
+	padding: 0px;
+}
+
+.qz_emotion_magic_ft {
+    border-top: 1px solid #E9E9E9;
+    height: 20px;
+    padding: 8px 10px 6px;
+    margin: 0px !important;
+    font-family: Tahoma;
+    font-size: 12px;
+    line-height: 1.333;
+}
+
+.qz_emotion_magic_ft .qz_page_nav {
+    float: right;
+}
+
+.qz_emotion_magic_ft .qz_page_nav a {
+    color: #0082CB;
+    text-decoration: none;
+}
+
+.qz_emotion_magic_ft .qz_page_nav a:hover{
+	text-decoration: underline;
+}
+
+.ui_mr5 {
+    margin-right: 5px;
+}
+
+.ui_mr5 {
+    margin-right: 5px;
+}
+
+a.disable:link, a.disable:hover, a.disable:active, a.disable:visited {
+	color: #A8A8A8 !important;
+	text-decoration: none !important;
+	cursor: text !important;
+}
+
+div.emotion_preview_default {
+	border: 1px solid #999;
+	position: absolute;
+	width: 59px;
+	height: 59px;
+	background-color: white;
+	overflow: hidden;
+	top: 3px;
+}
+
+div.emotion_preview_default img {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 8px;
+	margin-left: 18px;
+	width: 24px;
+	height: 24px;
+}
+
+div.emotion_preview_default span {
+	background-color: #ECECEC;
+	color: #545454;
+	display: block;
+	font-family: Tahoma;
+	font-size: 12px;
+	line-height: 15px;
+	padding: 1px;
+	text-align: center;
+}
+
+div.floatLeft {
+	left: 3px;
+}
+
+div.floatRight {
+	right: 3px;
+}

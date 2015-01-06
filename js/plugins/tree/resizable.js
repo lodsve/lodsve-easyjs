@@ -68,7 +68,7 @@
                 {
 
                     if ($.browser.msie || $.browser.safari) 
-                        $('body').bind('selectstart', function () { return false; }); // ²»ÄÜÑ¡Ôñ
+                        $('body').bind('selectstart', function () { return false; }); // ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½
                     $(".l-window-mask-nobackground").remove();
                     $("<div class='l-window-mask-nobackground' style='display: block;'></div>").appendTo($("body"));
                     g.target.resizable.css({

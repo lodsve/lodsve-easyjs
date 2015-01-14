@@ -600,11 +600,10 @@ var ligerDialogImagePath = easyloader.URI + "/js/plugins/" + (easyloader.theme =
                                     resetForm:p.isFormReset ? p.isFormReset : false,
                                     data:p.data ? p.data : '',
                                     success:function (ret) {
-                                        returnValue = $.trim(ret);
                                         submitButton.removeClass("l-dialog-btn-disable");
                                         $(".l-dialog-btn-inner", submitButton).html(p.btnSure ? p.btnSure : $.ligerDialog.defaultProps.btnSure);
                                         try { //返回json数据
-                                            returnValue = eval('(' + returnValue + ')');
+                                            returnValue = $.util.decode(ret);
                                             var msg = (returnValue.msg && returnValue.msg != null) ? returnValue.msg : (returnValue.status == 1 ? '保存成功！' : '保存失败！');
                                             if (!p.submitSuccessFunc) {
                                                 if (returnValue.status == 1) {

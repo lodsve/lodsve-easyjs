@@ -277,9 +277,11 @@
 			 * @returns {String}
 			 */
 			decode: function(json){
+				if(typeof json == "Object")
+					return json
 				try{
 					if(json)
-						return eval('(' + json + ')');
+						return eval('(' + $.trim(ret) + ')');
 					else
 						return null;
 				} catch(e){

@@ -277,7 +277,7 @@
 			 * @returns {String}
 			 */
 			decode: function(json){
-				if(typeof json == "Object")
+				if(typeof json == "object")
 					return json
 				try{
 					if(json)

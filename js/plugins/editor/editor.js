@@ -39,6 +39,7 @@
 	}
 	
 	$.fn.kindeditor = function(p){
+		var editor;
 		this.each(function(){
 			p = $.extend({}, $.editor.defaults, p || {});
 			//element
@@ -119,9 +120,11 @@
 					return KindEditor.create('textarea[id="' + id + '"]', config);
 				}
 			};
-			
-			return f.create();
+
+			editor = f.create();
 		});
+
+		return editor;
 	}
 
 })(jQuery)

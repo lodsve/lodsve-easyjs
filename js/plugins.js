@@ -276,5 +276,16 @@
         "moduleCss":"metro.css",
         "moduleDependencies": "plugins/metro/jquery.plugins.js",
         "modeulCnName": "扁平化布局"
+    },
+    {
+        "moduleName": "wmd",
+        "moduleJs": "wmd.js",
+        "moduleCss": "wmd.css",
+        "moduleDependencies": [
+            "plugins/wmd/dependencies/Markdown.Converter.js",
+            "plugins/wmd/dependencies/Markdown.Editor.js",
+            "plugins/wmd/dependencies/Markdown.Sanitizer.js"
+        ],
+        "modeulCnName": "支持markdown的编辑器"
     }
 ]

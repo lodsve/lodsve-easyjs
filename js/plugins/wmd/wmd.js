@@ -74,7 +74,7 @@
 
             _this.after(preview);
             if(p.preview) {
-                _this.css("width", "49%").css("float", "left").css("margin-right", "1%");
+                _this.css("width", "48%").css("float", "left").css("margin-right", "1%");
                 preview.css("width", "48%").css("float", "left");
                 preview.addClass(p.previewCls);
             } else {

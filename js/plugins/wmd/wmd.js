@@ -8,19 +8,57 @@
     //定义$.wmd
     $.wmd = $.wmd || {};
 
+    $.wmd.defaultWmdLocal = {
+        bold: "粗体 <strong> Ctrl+B",
+        boldexample: "strong text",
+
+        italic: "斜体 <em> Ctrl+I",
+        italicexample: "emphasized text",
+
+        link: "超级链接 <a> Ctrl+L",
+        linkdescription: "enter link description here",
+        linkdialog: "<p><b>Insert Hyperlink</b></p><p>http://sunhao-java.vicp.cc/ \"optional title\"</p>",
+
+        quote: "引用文字 <blockquote> Ctrl+Q",
+        quoteexample: "Blockquote",
+
+        code: "代码 <pre><code> Ctrl+K",
+        codeexample: "enter code here",
+
+        image: "图片 <img> Ctrl+G",
+        imagedescription: "enter image description here",
+        imagedialog: "<p><b>Insert Image</b></p><p>http://example.com/images/diagram.jpg \"optional title\"<br><br>Need <a href='http://www.google.com/search?q=free+image+hosting' target='_blank'>free image hosting?</a></p>",
+
+        olist: "编号 <ol> Ctrl+O",
+        ulist: "项目符号 <ul> Ctrl+U",
+        litem: "列表",
+
+        heading: "标题 <h1>/<h2> Ctrl+H",
+        headingexample: "标题",
+
+        hr: "水平线 <hr> Ctrl+R",
+
+        undo: "后退 - Ctrl+Z",
+        redo: "前进 - Ctrl+Y",
+        redomac: "Redo - Ctrl+Shift+Z",
+
+        help: "帮助"
+    }
+
     //所需的参数默认值
     $.wmd.defaults = {
         helpButton: {
             handler: function () {
                 window.open("http://www.oschina.net/question/100267_75314");
             },
-            title:'Markdown快速入门'
+            title: '帮助'
         },
         width: 500,
         height: 450,
         preview: true,
         wmdCls: "wmd-input",
-        previewCls: "wmd-preview"
+        previewCls: "wmd-preview",
+        strings: $.wmd.defaultWmdLocal
     }
 
     $.fn.wmd = function (p) {
@@ -36,9 +74,8 @@
 
                     var options = {};
 
-                    if (p.helpButton) {
-                        options.helpButton = p.helpButton;
-                    }
+                    options.helpButton = p.helpButton;
+                    options.strings = p.strings;
 
                     var editor = new Markdown.Editor(converter, "-" + id, options);
 

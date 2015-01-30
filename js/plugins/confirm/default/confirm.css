@@ -43,7 +43,7 @@ p.act {
     width: 13px;
 }
 
-h3 {
+.bd h3.content {
     font-size: 14px;
     font-weight: bold;
     margin: 0px;

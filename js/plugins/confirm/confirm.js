@@ -33,9 +33,9 @@
             var f = {
                 getBody: function(){
                     if(!p.isFormatMessage){
-                        return '<h3>' + p.confirmMessage + '</h3>';
+                        return '<h3 class="content">' + p.confirmMessage + '</h3>';
                     } else {
-                        return '<h3>' + "确定删除该%s吗？".replace(/%s/, p.confirmMessage) + '</h3>';
+                        return '<h3 class="content">' + "确定删除该%s吗？".replace(/%s/, p.confirmMessage) + '</h3>';
                     }
                 },
                 getDelFoot: function(){

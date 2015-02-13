@@ -12,17 +12,17 @@
     var modules = {};
     //将国际化文件放入一个locales对象中
     var locales = {
-        'af':'easyui-lang-af.js',
-        'bg':'easyui-lang-bg.js',
-        'ca':'easyui-lang-ca.js',
-        'cs':'easyui-lang-cs.js',
-        'da':'easyui-lang-da.js',
-        'de':'easyui-lang-de.js',
-        'en':'easyui-lang-en.js',
-        'fr':'easyui-lang-fr.js',
-        'nl':'easyui-lang-nl.js',
-        'zh_CN':'easyui-lang-zh_CN.js',
-        'zh_TW':'easyui-lang-zh_TW.js'
+        'af': 'easyui-lang-af.js',
+        'bg': 'easyui-lang-bg.js',
+        'ca': 'easyui-lang-ca.js',
+        'cs': 'easyui-lang-cs.js',
+        'da': 'easyui-lang-da.js',
+        'de': 'easyui-lang-de.js',
+        'en': 'easyui-lang-en.js',
+        'fr': 'easyui-lang-fr.js',
+        'nl': 'easyui-lang-nl.js',
+        'zh_CN': 'easyui-lang-zh_CN.js',
+        'zh_TW': 'easyui-lang-zh_TW.js'
     };
 
     //定义一个局部变量，做循环遍历时候，存放状态
@@ -99,7 +99,7 @@
                     url = module['css'];
                 } else {
                     url = easyloader.base + easyloader.pluginsStr + easyloader.splitStr
-                            + name + easyloader.splitStr + easyloader.theme + easyloader.splitStr + module['css'];
+                    + name + easyloader.splitStr + easyloader.theme + easyloader.splitStr + module['css'];
 
                 }
                 loadCss(url, function () {
@@ -235,13 +235,16 @@
                     var tpModuleCss = data[i].moduleCss
                     var tpModuleDependencies = data[i].moduleDependencies;
 
-                    //如果直接传递一个插件名，就去modole数组中加载。改方法是重点，也是easyui自带的plugin加载方式
+                    //如果直接传递一个插件名，就去module数组中加载。改方法是重点，也是easyui自带的plugin加载方式
                     if (tpModuleName == undefined || tpModuleJs == undefined) return;
 
                     /**
                      * 如果依赖其他module,则最从最低底加载
                      */
-                    easyloader.modules[tpModuleName] = {js:tpModuleJs}
+                    if(easyloader.compress) {
+                        tpModuleJs = tpModuleJs.substring(0, tpModuleJs.indexOf(".js")) + ".min.js";
+                    }
+                    easyloader.modules[tpModuleName] = {js: tpModuleJs}
                     //css附加
                     if (tpModuleCss != undefined) {
                         //直接对象赋值
@@ -272,19 +275,19 @@
 
     //定义一个加载器，注意，是全局变量，没有var,
     easyloader = {
-        modules:modules,
-        locales:locales,
-        base:'.', //该属性是为了加载js,记录文件夹路径的
-        theme:'default', //默认主题
-        css:true,
-        pluginsStr:'plugins',
-        splitStr:'/',
-        URI:'',
-        pluginsJsDone:false,
-        locale:null,
-        timeout:2000, //加载超时事件
-        //easyloader.load()，该模块加载的调用方法,先加载css,然后加载js
-        load:function (name, callback) {
+        modules: modules,
+        locales: locales,
+        base: '.', //该属性是为了加载js,记录文件夹路径的
+        theme: 'default', //默认主题
+        css: true,
+        pluginsStr: 'plugins',
+        splitStr: '/',
+        URI: '',
+        compress: false,    //是否使用压缩后的js
+        pluginsJsDone: false,
+        locale: null,
+        timeout: 2000, //加载超时事件
+        load: function (name, callback) {
             //如果加载是*.css文件，判断是不是以http开头，如果是，直接调用
             if (/\.css$/i.test(name)) {
                 if (/^http/i.test(name)) {
@@ -306,9 +309,9 @@
                 makeModule(name, callback);
             }
         },
-        onProgress:function (name) {
+        onProgress: function (name) {
         },
-        onLoad:function (name) {
+        onLoad: function (name) {
         }
     };
     //以上一直在定义函数，和变量，此处为真正执行处
@@ -324,21 +327,17 @@
         }
     }
 
-    //定义一个简化调用接口
-    window.using = easyloader.load;
-
     if (window.jQuery) {
         jQuery(function () {
-            //系统数据加载完后，加载parser.js插件，该插件是渲染界面的
-//            easyloader.load('parser', function () {
-//                jQuery.parser.parse();//渲染方法
-//            });
-
             //每个页面默认引入base.js
             //判断页面是否已引入base.js
-            if(!jQuery.util)
-                loadJs(easyloader.base + 'base.js');
+            if (!jQuery.util) {
+                loadJs(easyloader.base + 'base' + (easyloader.compress ? ".min.js" : ".js"));
+            }
         });
     }
+
+    //定义一个简化调用接口
+    window.using = easyloader.load;
 
 })(jQuery);

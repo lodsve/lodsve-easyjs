@@ -630,7 +630,7 @@ var ligerDialogImagePath = easyloader.URI + "/js/plugins/" + (easyloader.theme =
                                                 }
                                             } else {
                                                 if (typeof(p.submitSuccessFunc) == 'function')
-                                                    p.submitSuccessFunc($.trim(ret), dg);
+                                                    p.submitSuccessFunc(returnValue, dg);
                                             }
                                         } catch (e) {
                                             alert('解析错误' + e.description);

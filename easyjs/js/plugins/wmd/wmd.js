@@ -49,7 +49,7 @@
     $.wmd.defaults = {
         helpButton: {
             handler: function () {
-                window.open("http://www.appinn.com/markdown/");
+                window.open("http://www.appinn.com/markdown/basic.html");
             },
             title: '帮助'
         },

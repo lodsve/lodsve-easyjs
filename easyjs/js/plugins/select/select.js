@@ -37,30 +37,30 @@
         msg.push('</script>');
 
         var dialog =
-        top.$.ligerDialog.open({
-            title: p.title,
-            content: msg.join(''),
-            width: 630,
-            height: 488,
-            isNeedNoPaddingClass:true,
-            buttons: [
-                {
-                    text: '确定',
-                    onclick: function(item, dialog){
-                        var result = $.select.submit(p, element);
-                        if(result){
+            top.$.ligerDialog.open({
+                title: p.title,
+                content: msg.join(''),
+                width: 630,
+                height: 488,
+                isNeedNoPaddingClass:true,
+                buttons: [
+                    {
+                        text: '确定',
+                        onclick: function(item, dialog){
+                            var result = $.select.submit(p, element);
+                            if(result){
+                                dialog.close();
+                            }
+                        }
+                    },
+                    {
+                        text: '取消',
+                        onclick: function(item, dialog){
                             dialog.close();
                         }
                     }
-                },
-                {
-                    text: '取消',
-                    onclick: function(item, dialog){
-                        dialog.close();
-                    }
-                }
-            ]
-        });
+                ]
+            });
     }
 
     $.select.submit = function(p, element){
@@ -112,7 +112,7 @@
                 //添加已选中的项
                 addTopItem: function(name, value){
                     var append = '<li id="t-selected-item-' + value + '" class="single"><span>' + name +
-                            '</span><a class="t-delete-item"></a></li>'
+                        '</span><a class="t-delete-item"></a></li>'
                     $('.t-selected-ul').append(append);
                     g.updateSelectedCount();
                     //为删除按钮(X)绑定删除事件
@@ -151,7 +151,7 @@
                     content.push('      </li>');
                     content.push('      <li>');
                     content.push('          <label for="selectAll">');
-                    content.push('              <input name="selectAll" id="selectAll" type="checkbox" value=""/>&nbsp;全选&nbsp;');
+                    content.push('              <input name="selectAll" id="selectAll" type="checkbox" value=""/>&nbsp;全选');
                     content.push('          </label>');
                     content.push('      </li>');
                     content.push('  </div>');
@@ -160,12 +160,14 @@
                     content.push('  <div class="page_blue">');
                     content.push('  </div>');
                     content.push('</div>');
-                    
+
                     ditem.html(content.join(''));
                     $("#content", g.tabs).append(ditem);
                     ditem.attr("title", item.title);
                     ditem.attr("leftUrl", item.leftUrl);
                     ditem.attr("rightUrl", item.rightUrl);
+                    ditem.attr("idFieldName", item.idFieldName);
+                    ditem.attr("textFieldName", item.textFieldName);
                 },
                 //load右侧的待选择内容
                 loadRightData: function(url, param){
@@ -238,7 +240,7 @@
                             });
                             rightContentHtml.push('<li class="r-selected-li' + _selected + '" title="' + name + '">');
                             rightContentHtml.push('     <input class="r-selected-item" ' + _checked + ' type="checkbox" value="' +
-                                                            value + '"  id="' + value + '" text="' + name + '"/>')
+                            value + '"  id="' + value + '" text="' + name + '"/>')
                             rightContentHtml.push(name);
                             rightContentHtml.push('</li>');
                         }
@@ -345,7 +347,7 @@
             g.tabs = $(this);
             //总的项数
             g.totalCount = 0;
-            
+
             //组件整体框架
             var frameHtml = [];
             frameHtml.push('<div id="selectArea" style="width:600px;height:100px;">');
@@ -371,8 +373,8 @@
                     var li = $("li[tabid=" + tabId + "]");
                     var leftUrl = li.attr("leftUrl");
                     var rightUrl = li.attr("rightUrl");
-                    var idFieldName = "pkId";
-                    var textFieldName = "name";
+                    var idFieldName = li.attr("idFieldName");
+                    var textFieldName = li.attr("textFieldName");
                     g.loadRightData(rightUrl, "");
                     //初始化左侧树
                     $('#' + tabId).ligerTree({
